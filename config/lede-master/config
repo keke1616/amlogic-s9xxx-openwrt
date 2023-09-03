@@ -458,9 +458,9 @@ CONFIG_TARGET_PREINIT_TIMEOUT=2
 # CONFIG_TARGET_PREINIT_SHOW_NETMSG is not set
 # CONFIG_TARGET_PREINIT_SUPPRESS_FAILSAFE_NETMSG is not set
 CONFIG_TARGET_PREINIT_IFNAME=""
-CONFIG_TARGET_PREINIT_IP="192.168.1.1"
+CONFIG_TARGET_PREINIT_IP="192.168.2.120"
 CONFIG_TARGET_PREINIT_NETMASK="255.255.255.0"
-CONFIG_TARGET_PREINIT_BROADCAST="192.168.1.255"
+CONFIG_TARGET_PREINIT_BROADCAST="192.168.2.255"
 # CONFIG_INITOPT is not set
 CONFIG_TARGET_INIT_PATH="/usr/sbin:/usr/bin:/sbin:/bin"
 CONFIG_TARGET_INIT_ENV=""
@@ -2441,7 +2441,7 @@ CONFIG_PACKAGE_kmod-nfnetlink=y
 # CONFIG_PACKAGE_kmod-nft-bridge is not set
 # CONFIG_PACKAGE_kmod-nft-compat is not set
 # CONFIG_PACKAGE_kmod-nft-connlimit is not set
-# CONFIG_PACKAGE_kmod-nft-core is not set
+CONFIG_PACKAGE_kmod-nft-core=y
 # CONFIG_PACKAGE_kmod-nft-fib is not set
 # CONFIG_PACKAGE_kmod-nft-nat is not set
 # CONFIG_PACKAGE_kmod-nft-nat6 is not set
@@ -4987,6 +4987,8 @@ CONFIG_PACKAGE_luci-app-wol=y
 # CONFIG_PACKAGE_luci-app-wrtbwmon is not set
 # CONFIG_PACKAGE_luci-app-xlnetacc is not set
 CONFIG_PACKAGE_luci-app-zerotier=y
+CONFIG_PACKAGE_luci-app-openclash=y
+CONFIG_PACKAGE_luci-app-passwall=y
 # end of 3. Applications
 
 #
@@ -5535,7 +5537,7 @@ CONFIG_PACKAGE_miniupnpd=y
 # CONFIG_PACKAGE_nftables-json is not set
 # CONFIG_PACKAGE_nftables-nojson is not set
 # CONFIG_PACKAGE_shorewall is not set
-# CONFIG_PACKAGE_shorewall-core is not set
+# CONFIG_PACKAGE_shorewall- is not set
 # CONFIG_PACKAGE_shorewall-lite is not set
 # CONFIG_PACKAGE_shorewall6 is not set
 # CONFIG_PACKAGE_shorewall6-lite is not set
@@ -6796,7 +6798,7 @@ CONFIG_PACKAGE_ttyd=y
 CONFIG_PACKAGE_zoneinfo-asia=y
 # CONFIG_PACKAGE_zoneinfo-atlantic is not set
 # CONFIG_PACKAGE_zoneinfo-australia-nz is not set
-CONFIG_PACKAGE_zoneinfo-core=y
+CONFIG_PACKAGE_zoneinfo-=y
 # CONFIG_PACKAGE_zoneinfo-europe is not set
 # CONFIG_PACKAGE_zoneinfo-india is not set
 # CONFIG_PACKAGE_zoneinfo-northamerica is not set
@@ -6906,47 +6908,47 @@ CONFIG_PACKAGE_cgroupfs-mount=y
 # CONFIG_PACKAGE_collectd is not set
 # CONFIG_PACKAGE_conmon is not set
 CONFIG_PACKAGE_containerd=y
-CONFIG_PACKAGE_coremark=y
-CONFIG_COREMARK_OPTIMIZE_O3=y
-CONFIG_COREMARK_ENABLE_MULTITHREADING=y
-CONFIG_COREMARK_NUMBER_OF_THREADS=8
-CONFIG_PACKAGE_coreutils=y
-# CONFIG_PACKAGE_coreutils-b2sum is not set
-# CONFIG_PACKAGE_coreutils-base32 is not set
-CONFIG_PACKAGE_coreutils-base64=y
-# CONFIG_PACKAGE_coreutils-basename is not set
-# CONFIG_PACKAGE_coreutils-basenc is not set
-# CONFIG_PACKAGE_coreutils-cat is not set
-# CONFIG_PACKAGE_coreutils-chcon is not set
-# CONFIG_PACKAGE_coreutils-chgrp is not set
-# CONFIG_PACKAGE_coreutils-chmod is not set
-# CONFIG_PACKAGE_coreutils-chown is not set
-# CONFIG_PACKAGE_coreutils-chroot is not set
-# CONFIG_PACKAGE_coreutils-cksum is not set
-# CONFIG_PACKAGE_coreutils-comm is not set
-# CONFIG_PACKAGE_coreutils-cp is not set
-# CONFIG_PACKAGE_coreutils-csplit is not set
-# CONFIG_PACKAGE_coreutils-cut is not set
-# CONFIG_PACKAGE_coreutils-date is not set
-# CONFIG_PACKAGE_coreutils-dd is not set
-# CONFIG_PACKAGE_coreutils-df is not set
-# CONFIG_PACKAGE_coreutils-dir is not set
-# CONFIG_PACKAGE_coreutils-dircolors is not set
-# CONFIG_PACKAGE_coreutils-dirname is not set
-# CONFIG_PACKAGE_coreutils-du is not set
-# CONFIG_PACKAGE_coreutils-echo is not set
-# CONFIG_PACKAGE_coreutils-env is not set
-# CONFIG_PACKAGE_coreutils-expand is not set
-# CONFIG_PACKAGE_coreutils-expr is not set
-# CONFIG_PACKAGE_coreutils-factor is not set
-# CONFIG_PACKAGE_coreutils-false is not set
-# CONFIG_PACKAGE_coreutils-fmt is not set
-# CONFIG_PACKAGE_coreutils-fold is not set
-# CONFIG_PACKAGE_coreutils-groups is not set
-# CONFIG_PACKAGE_coreutils-head is not set
-# CONFIG_PACKAGE_coreutils-hostid is not set
-# CONFIG_PACKAGE_coreutils-id is not set
-# CONFIG_PACKAGE_coreutils-install is not set
+CONFIG_PACKAGE_mark=y
+CONFIG_MARK_OPTIMIZE_O3=y
+CONFIG_MARK_ENABLE_MULTITHREADING=y
+CONFIG_MARK_NUMBER_OF_THREADS=8
+CONFIG_PACKAGE_utils=y
+# CONFIG_PACKAGE_utils-b2sum is not set
+# CONFIG_PACKAGE_utils-base32 is not set
+CONFIG_PACKAGE_utils-base64=y
+# CONFIG_PACKAGE_utils-basename is not set
+# CONFIG_PACKAGE_utils-basenc is not set
+# CONFIG_PACKAGE_utils-cat is not set
+# CONFIG_PACKAGE_utils-chcon is not set
+# CONFIG_PACKAGE_utils-chgrp is not set
+# CONFIG_PACKAGE_utils-chmod is not set
+# CONFIG_PACKAGE_utils-chown is not set
+# CONFIG_PACKAGE_utils-chroot is not set
+# CONFIG_PACKAGE_utils-cksum is not set
+# CONFIG_PACKAGE_utils-comm is not set
+# CONFIG_PACKAGE_utils-cp is not set
+# CONFIG_PACKAGE_utils-csplit is not set
+# CONFIG_PACKAGE_utils-cut is not set
+# CONFIG_PACKAGE_utils-date is not set
+# CONFIG_PACKAGE_utils-dd is not set
+# CONFIG_PACKAGE_utils-df is not set
+# CONFIG_PACKAGE_utils-dir is not set
+# CONFIG_PACKAGE_utils-dircolors is not set
+# CONFIG_PACKAGE_utils-dirname is not set
+# CONFIG_PACKAGE_utils-du is not set
+# CONFIG_PACKAGE_utils-echo is not set
+# CONFIG_PACKAGE_utils-env is not set
+# CONFIG_PACKAGE_utils-expand is not set
+# CONFIG_PACKAGE_utils-expr is not set
+# CONFIG_PACKAGE_utils-factor is not set
+# CONFIG_PACKAGE_utils-false is not set
+# CONFIG_PACKAGE_utils-fmt is not set
+# CONFIG_PACKAGE_utils-fold is not set
+# CONFIG_PACKAGE_utils-groups is not set
+# CONFIG_PACKAGE_utils-head is not set
+# CONFIG_PACKAGE_utils-hostid is not set
+# CONFIG_PACKAGE_utils-id is not set
+# CONFIG_PACKAGE_utils-install is not set
 # CONFIG_PACKAGE_coreutils-join is not set
 # CONFIG_PACKAGE_coreutils-kill is not set
 # CONFIG_PACKAGE_coreutils-link is not set
